@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+user_id=${id -u}
+if [ "$user_id" != 0]; then
+  echo you need to run this as your a root user
+
+else
 yum install nginx -y
 systemctl enable nginx
 systemctl start nginx
@@ -12,3 +17,4 @@ mv static/* .
 rm -rf frontend-main README.md
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 systemctl restart nginx
+fi
