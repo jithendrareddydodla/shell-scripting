@@ -2,4 +2,5 @@
 
 read -p "Enter Name: " name
 
-echo name: ${name}
+
+\n echo name: ${name}
