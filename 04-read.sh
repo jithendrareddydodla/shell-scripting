@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-read -p "Enter Name" name
+read -p "Enter Name: " name
 
 echo name: ${name}
