@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-read -p "Enter Name: " name
+read -p "Enter Name: " name \n
 
 
-echo \n name: ${name}
+echo  name: ${name}
