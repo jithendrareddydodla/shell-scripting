@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-echo catalogue
+echo catalogue file

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-echo redis
+echo redis file
