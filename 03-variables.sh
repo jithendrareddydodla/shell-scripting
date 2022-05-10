@@ -21,3 +21,11 @@ solution=$((a+b))
 
 echo solution is $solution
 
+
+
+a=(10 20 30); b=(10 20 30)
+solution=$((a+b))
+echo solution is $solution
+
+
+
