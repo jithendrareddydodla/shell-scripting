@@ -13,7 +13,7 @@ SUM=$((2+3))
 
 echo Sum of above express is $SUM
 
-Solution=$((2/times 10))
+Solution=$((2*2*4))
 echo Your Result in Percentage is $Solution
 
 
