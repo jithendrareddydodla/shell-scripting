@@ -27,7 +27,7 @@ a=(10,20,30); b=(10,20,30)
 solution=$((a+b))
 echo solutions is {$solution}
 
-echo Jithendra has ${c} of gold coins
+echo Jithendra has ${c}   of gold coins
 
 
 
