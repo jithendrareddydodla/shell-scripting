@@ -8,7 +8,7 @@ echo person name = $person_name
 Date=2022-05-10
 echo Hello, today date is $Date
 
-SUM=$((2+3))
+SUM=((2+3))
 
 
 echo Sum of above express is $SUM
