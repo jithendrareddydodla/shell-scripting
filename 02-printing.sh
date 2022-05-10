@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-echo -e "jithendra
-\nreddy
-\ndodla
-\nwelcome to world"
+echo -e "\e[35m Jithendra
+\n \e[31m Reddy[0m"
+
 
