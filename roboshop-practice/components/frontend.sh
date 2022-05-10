@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+source components/common.sh
+
+CheckRootUser
+
 yum install nginx -y
 systemctl enable nginx
 systemctl start nginx
