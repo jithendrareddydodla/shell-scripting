@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-echo HELLO WORLD
-
-echo Name is Jithendra Reddy Dodla
+echo Hello World
+  jithendra is good
+  he has family
