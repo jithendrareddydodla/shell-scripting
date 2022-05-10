@@ -6,5 +6,5 @@ echo person name = $person_name
 
 
 Date=2022-05-10
-echo Hello, today date is $date
+echo Hello, today date is $Date
 
