@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
-echo Hello World
-  jithendra is good
-  he has family
+echo -e "jithendra\nreddy\ndodla\nwelcome to world"
+
