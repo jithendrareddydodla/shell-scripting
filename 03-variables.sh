@@ -16,4 +16,8 @@ echo Sum of above express is $SUM
 Solution=$((2*2*4))
 echo Your Result in Percentage is $Solution
 
+a=10; b=20
+solution=$((a+b))
+
+echo solution is $solution
 
