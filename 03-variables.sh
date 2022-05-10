@@ -13,3 +13,7 @@ SUM=$((2+3))
 
 echo Sum of above express is $SUM
 
+Solution=$(((315/600)*100))
+echo Your Result in Percentage is $Solution
+
+
