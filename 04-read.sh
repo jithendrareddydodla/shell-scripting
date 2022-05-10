@@ -3,4 +3,4 @@
 read -p "Enter Name: " name
 
 
-\n echo name: ${name}
+\necho name: ${name}
