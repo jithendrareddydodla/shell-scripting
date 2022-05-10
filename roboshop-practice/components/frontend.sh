@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-user_id=${id -u}
-if [ "$user_id" != 0]; then
+user_id=$(id -u)
+if [ "$user_id" -ne 0]; then
   echo you need to run this as your a root user
 
 else
