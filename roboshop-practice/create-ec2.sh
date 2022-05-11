@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+aws ec2 run-instances --image-id ami-0bb6af715826253bf --instance-type t2.micro --instance-market-options "MarketType=spot,SpotOptions={SpotInstanceType=persistent,InstanceInterruptionBehavior=stop}" --tag-specifications "ResourceType=spot-instances-request,Tags=[{Key=Name,Value=Frontend}]" "ResourceType=instance,Tags=[{Key=Name,Value=Frontend}]"
