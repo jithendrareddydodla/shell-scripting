@@ -19,3 +19,10 @@ Statuscheck()  {
     fi
 }
 
+
+Logfileoutput() {
+  LOG_File=tmp/roboshop_output.log
+  rm -f $LOG_FILE
+}
+
+
