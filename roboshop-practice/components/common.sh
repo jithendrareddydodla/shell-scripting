@@ -8,3 +8,14 @@ CheckRootUser() {
     echo -e "\e[32m wait scritp is running.....\e[0m"
   fi
 }
+
+Statuscheck()  {
+
+   if [ $? -eq 0 ]; then
+      echo -e "\e[32m This stage is Sucess\e[0m"
+    else
+       echo -e "\e[31m This stage is Failure\e[0m"
+      exit 1
+    fi
+}
+
