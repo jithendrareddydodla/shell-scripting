@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-USER_ID=$(id -u)
-if [ "$USER_ID" -ne 0 ]; then
-  echo You need to run this as ROOT USER
-else
+source component/common.sh
+
+Checkrootuser
+
   yum install nginx -y
   systemctl enable nginx
   systemctl start nginx
@@ -17,6 +17,6 @@ else
   mv localhost.conf /etc/nginx/default.d/roboshop.conf
   systemctl restart nginx
 
-fi
+
 
 
