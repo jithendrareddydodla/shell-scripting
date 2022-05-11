@@ -7,3 +7,6 @@ catalogue:
 frontend:
 	@bash components/frontend.sh
 
+redis:
+	@bash components/redis.sh
+
