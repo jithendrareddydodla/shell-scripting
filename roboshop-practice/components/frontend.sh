@@ -6,7 +6,7 @@ CheckRootUser
 
   echo "INSTALLING NGINX"
   yum install nginx -y >/tmp/roboshop_output.log
-if ["$?" -eq "0"]; then
+if ["$?" -eq 0]; then
   echo -e "\e[32m This stage is Sucess\e[0m"
 else
    echo -e "\e[31m This stage is Failure\e[0m"
