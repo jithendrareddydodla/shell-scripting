@@ -21,7 +21,7 @@ Statuscheck()  {
 
 
 LOG_FILE=/tmp/roboshop_output.log
-rm -f $LOG_FILE
+rm -f $(LOG_FILE)
 
 
 
