@@ -5,6 +5,6 @@ CheckRootUser() {
     echo -e "\e[31mYou need to run this as root user\e[om"
     exit 1
   else
-    echo -e "\e[32mwiat scritp is running.....\e[0m"
+    echo -e "\e[32m wait scritp is running.....\e[0m"
   fi
 }
