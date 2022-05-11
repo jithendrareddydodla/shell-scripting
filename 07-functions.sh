@@ -3,3 +3,4 @@
 smaple() {
   echo Iam a Sample Function
 }
+smaple
