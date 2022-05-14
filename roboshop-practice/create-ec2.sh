@@ -7,6 +7,11 @@ fi
 
 Name=$1
 
+aws ec2 describe-spot-instance-requests --filters Name=tag:Name,Values=${Name} Name=state,Values=active --output table | grep InsatanceId &>/dev/null
+if [ $? -eq 0 ]; then
+  echo -e "\e[31m Instance Already Exits\e[0m"
+  exit 0
+fi
 
 AMI_ID=$(aws ec2 describe-images --filters "Name=name,Values=Centos-7-DevOps-Practice" --output table | grep ImageId | awk '{print $4}')
 
