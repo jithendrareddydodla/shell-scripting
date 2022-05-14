@@ -5,9 +5,9 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-Name=$1
+NAME=$1
 
-aws ec2 describe-spot-instance-requests --filters Name=tag:Name,Values=$1 Name=state,Values=active --output table | grep InstanceId &>/dev/null
+aws ec2 describe-spot-instance-requests --filters Name=tag:Name,Values=${NAME} Name=state,Values=active --output table | grep InstanceId &>/dev/null
 if [ $? -eq 0 ]; then
   echo -e "\e[31m Instance Already Exits\e[0m"
   exit 0
@@ -15,4 +15,4 @@ fi
 
 AMI_ID=$(aws ec2 describe-images --filters "Name=name,Values=Centos-7-DevOps-Practice" --output table | grep ImageId | awk '{print $4}')
 
-aws ec2 run-instances --image-id ${AMI_ID} --instance-type t2.micro --instance-market-options "MarketType=spot,SpotOptions={SpotInstanceType=persistent,InstanceInterruptionBehavior=stop}" --tag-specifications "ResourceType=spot-instances-request,Tags=[{Key=Name,Value=${Name}}]" "ResourceType=instance,Tags=[{Key=Name,Value=${Name}}]"
+aws ec2 run-instances --image-id ${AMI_ID} --instance-type t2.micro --instance-market-options "MarketType=spot,SpotOptions={SpotInstanceType=persistent,InstanceInterruptionBehavior=stop}" --tag-specifications "ResourceType=spot-instances-request,Tags=[{Key=Name,Value=${NAME}}]" "ResourceType=instance,Tags=[{Key=Name,Value=${NAME}}]"
