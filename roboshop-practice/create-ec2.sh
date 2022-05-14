@@ -7,7 +7,7 @@ fi
 
 Name=$1
 
-aws ec2 describe-spot-instance-requests --filters Name=tag:Name,Values=${Name} Name=state,Values=active --output table | grep InstanceId &>/dev/null
+aws ec2 describe-spot-instance-requests --filters Name=tag:Name,Values=$1 Name=state,Values=active --output table | grep InstanceId &>/dev/null
 if [ $? -eq 0 ]; then
   echo -e "\e[31m Instance Already Exits\e[0m"
   exit 0
