@@ -1,0 +1,11 @@
+{
+  "comment": "CREATE/DELETE/UPSERT a record",
+  "Change": [{
+    "Action": "UPSERT",
+    "ResourceRecordSet": {
+      "Name": "COMPONENT.roboshop.blog",
+      "Type": "A",
+      "TTL": "300",
+      "ResourceRecords": [{ "Value":  "IPADDRESS" }]
+    }}]
+}
