@@ -25,7 +25,7 @@ INSTANCE_ID=$(aws ec2 describe-spot-instance-requests --filters Name=tag:Name,Va
 IPADDRESS= $(aws ec2 describe-instances --instance-ids ${INSTANCE_ID} --output table | grep PrivateIpAddress | head -n 1 | awk '{print $4}')
 
 sed -e "s/component/${NAME}/" -e "s/IPADDRESS/${IPADDRESS}/" record.json >/tmp/record.json
-aws route53 change-resourse-record-sets --hosted-zone-id Z0251361SXB48AR1STRU --change-batch file:///tmp/record.json &>/dev/null
+aws route53 change-resourse-record-sets --hosted-zone-id Z0923823L625NN01788B --change-batch file:///tmp/record.json &>/dev/null
 
 echo DNS Record Created
 
