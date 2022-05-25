@@ -5,7 +5,7 @@
     "ResourceRecordSet": {
       "Name": "COMPONENT.practice.blog",
       "Type": "A",
-      "TTL": "300",
+      "TTL": "299",
       "ResourceRecords": [{ "Value":  "IPADDRESS" }]
     }}]
 }
