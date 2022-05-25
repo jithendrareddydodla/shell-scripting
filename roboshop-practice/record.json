@@ -3,9 +3,9 @@
   "Change": [{
     "Action": "UPSERT",
     "ResourceRecordSet": {
-      "Name": "COMPONENT.practice.blog",
+      "Name": "COMPONENT.roboshop.blog",
       "Type": "A",
-      "TTL": "299",
+      "TTL": "300",
       "ResourceRecords": [{ "Value":  "IPADDRESS" }]
     }}]
 }
